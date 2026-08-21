@@ -1,12 +1,13 @@
-name: test-work
+name: rameshpspkon
 on: workflow_dispatch
 jobs:
   job-1:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
-      - run: echo "new one"
-      - run: hostname
-      - run: date
-      - run: free -h
-      - run: df -h 
-    
+      - name: system-info
+        run: |
+          echo "fristline"
+          date
+          hostname
+          free -m
+          df -h
