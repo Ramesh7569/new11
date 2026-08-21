@@ -4,6 +4,9 @@ jobs:
   job-1:
     runs-on: ubuntu-22.04
     steps:
-      - name: test-work
-        run: echo "this is my first work-flow"
+      - run: echo "new one"
+      - run: hostname
+      - run: date
+      - run: free -h
+      - run: df -h 
     
