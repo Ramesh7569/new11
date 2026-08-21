@@ -1,0 +1,9 @@
+name: test-work
+on: workflow_dispatch
+jobs:
+  job-1:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: test-work
+        run: echo "this is my first work-flow"
+    
